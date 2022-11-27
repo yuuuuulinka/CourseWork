@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="CalculatePage" prefHeight="600.0" prefWidth="500.0" styleClass="bodybgCalculatePage" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homedeviceskursova.CalculatePageController">
+   <children>
+      <VBox fx:id="VBoxAll" alignment="CENTER" layoutX="231.0" layoutY="136.0" prefHeight="600.0" prefWidth="500.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="LabelCalculate" style="-fx-background-color: #c8bfe7;" text="Calculation of&#10;consumption power" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="45.0" />
+               </font>
+            </Label>
+            <VBox fx:id="VBoxCalculatePower" alignment="CENTER" prefHeight="187.0" prefWidth="500.0">
+               <children>
+                  <HBox fx:id="HBoxInfo" alignment="CENTER" prefHeight="65.0" prefWidth="500.0" spacing="10.0">
+                     <children>
+                        <Label fx:id="LabelCP" style="-fx-background-color: #c8bfe7;" text="Consumption power:">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Result" prefHeight="46.0" prefWidth="225.0" text="Power" textFill="RED" visible="false">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="CalculateButton" alignment="CENTER" mnemonicParsing="false" onAction="#CalculateCP" prefHeight="42.0" prefWidth="166.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Calculate" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="MenuButton" alignment="CENTER" mnemonicParsing="false" onAction="#MenuClick" prefHeight="42.0" prefWidth="86.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Menu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

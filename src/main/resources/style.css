@@ -1,0 +1,54 @@
+.bodybg{
+    -fx-background-image: url("pngfiles/adddevice.png");
+}
+
+.bodybgHomePage{
+    -fx-background-image: url("pngfiles/3.png");
+}
+
+.bodybgAddSmallDevicePage{
+    -fx-background-image: url("pngfiles/addSmallDevice2.png");
+}
+
+.bodybgAddLargeDevicePage{
+    -fx-background-image: url("pngfiles/addLargeDevice1.png");
+}
+
+.bodybgAddLDDWithEEClassPage{
+    -fx-background-image: url("pngfiles/AddLDDWithEEClass.png");
+}
+
+.bodybgAddLDDWithoutEEClassPage{
+    -fx-background-image: url("pngfiles/AddLDDWithoutEEClass.png");
+}
+
+.bodybgAddLDDWithoutEEClassPage3{
+    -fx-background-image: url("pngfiles/AddLDDWithoutEEClass3.png");
+}
+
+.bodybgAddLDDWithoutEEClassPage2{
+    -fx-background-image: url("pngfiles/AddLDDWithoutEEClass2.png");
+}
+
+.bodybgDeletePage{
+    -fx-background-image: url("pngfiles/DeletePageBG.png");
+}
+
+.buttonstyle{
+    -fx-background-color:  #9999cc;
+    -fx-border-color: #cc99ff;
+    -fx-border-width: 2px;
+    -fx-text-fill: #f1ffff;
+}
+
+.bodybgFinfPage{
+    -fx-background-image: url("pngfiles/finddevicepage.png");
+}
+
+.bodybgCalculatePage{
+    -fx-background-image: url("pngfiles/calculate.png");
+}
+
+.bodybgChangePage{
+    -fx-background-image: url("pngfiles/change.png");
+}

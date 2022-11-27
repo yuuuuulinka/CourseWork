@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddLDDWithoutEEClassStage" prefHeight="605.0" prefWidth="615.0" styleClass="bodybgAddLDDWithoutEEClassPage3" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homedeviceskursova.AddLargeDeviceWithoutECClassController">
+   <children>
+      <VBox fx:id="AddLDDWithoutEEClassDevicePageVBox" alignment="TOP_CENTER" layoutX="50.0" layoutY="19.0" prefHeight="619.0" prefWidth="600.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="LabelAddLDDWithoutEEClass" prefHeight="174.0" prefWidth="518.0" text="Large Device&#10;without EEC" textAlignment="CENTER">
+               <font>
+                  <Font name="Algerian" size="75.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelSuccessAddLDDWithoutEEC" prefHeight="39.0" prefWidth="602.0" text="Large device without EEC added!" textFill="#e40000" visible="false">
+               <font>
+                  <Font name="Times New Roman" size="34.0" />
+               </font>
+            </Label>
+            <HBox fx:id="HBoxAllLabelsTextFieldsAddLDDWithoutEEClass" alignment="CENTER" prefHeight="174.0" prefWidth="615.0" spacing="10.0">
+               <children>
+                  <VBox fx:id="VBoxNameSNPluggedInPowerInOffState" prefHeight="180.0" prefWidth="266.0" spacing="10.0">
+                     <children>
+                        <HBox fx:id="HBoxNameLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="14.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelNameLDDWithoutEEClass" text="Name: ">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="NameTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="140.0" promptText="Enter device`s name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxSNLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="16.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelSNLDDWithoutEEClass" text="Serial number:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="SNTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="140.0" promptText="Enter device`s SN">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxPluggedInLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelPluggedInLDDWithoutEEClass" text="Plugged in:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="PluggedInTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="140.0" promptText="On/Off">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxPowerInOffStateLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelPowerInOffStateLDDWithoutEEClass" text="Power in&#10;off state:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="PowerInOffStateTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="140.0" promptText="Integer value in Wt">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="VBoxBrandPowerEnableStateTypeWithoutEEClass" prefHeight="183.0" prefWidth="265.0" spacing="10.0">
+                     <children>
+                        <HBox fx:id="HBoxBrandLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelBrandLDDWithoutEEClass" text="Brand:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="BrandTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="146.0" promptText="Enter device`s brand">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxPowerLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelPowerLDDWithoutEEClass" text="Power:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="PowerTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="145.0" promptText="Integer value in Wt">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxEnableStateLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelEnableStateLDDWithoutEEClass" text="Enable state:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="EnableStateTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="145.0" promptText="On/Off">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="HBoxTypeLDDWithoutEEClass" alignment="CENTER_RIGHT" prefHeight="0.0" prefWidth="266.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="LabelTypeLDDWithoutEEClass" text="Type:">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="TypeTextFieldLDDWithoutEEClass" prefHeight="30.0" prefWidth="145.0" promptText="Enter device`s type">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="AddLDDWithoutEEClass" alignment="CENTER" mnemonicParsing="false" onAction="#AddLDDWithoutEEClassClick" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Add" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Button>
+            <HBox fx:id="HBoxRetMenuButtonsLDDWithoutEEClass" alignment="CENTER" prefHeight="38.0" prefWidth="578.0" spacing="100.0">
+               <children>
+                  <Button fx:id="ReturnLDDWithoutEEClass" alignment="CENTER" mnemonicParsing="false" onAction="#ReturnLDDWithoutEEClassClick" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Return" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="MenuLDDWithoutEEClass" alignment="CENTER" mnemonicParsing="false" onAction="#MenuLDDWithoutEEClassClick" prefHeight="41.0" prefWidth="100.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Menu" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

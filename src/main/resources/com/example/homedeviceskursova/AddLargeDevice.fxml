@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="AddLargeDevicePage" prefHeight="600.0" prefWidth="500.0" styleClass="bodybgAddLargeDevicePage" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homedeviceskursova.AddLargeDevicePageController">
+   <children>
+      <VBox fx:id="VBoxAddLargeDevicePage" prefHeight="600.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="VBoxLabelAddLargeDevicePage" alignment="CENTER" prefHeight="202.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="LabelAddLarge" text="Add Large">
+                     <font>
+                        <Font name="Algerian" size="75.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="LabelLargeDevice" text="Device">
+                     <font>
+                        <Font name="Algerian" size="75.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <HBox fx:id="HBoxAllButtonsAddLargeDevice" alignment="CENTER" prefHeight="150.0" prefWidth="500.0" spacing="50.0">
+               <children>
+                  <VBox fx:id="VBoxWithReturnButtons" alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="215.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="WithECClassButton" alignment="CENTER" mnemonicParsing="false" onAction="#WithECClassButtonClick" prefHeight="80.0" prefWidth="210.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="With energy &#10;efficiency class" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="ReturnLargeDevice" alignment="CENTER" mnemonicParsing="false" onAction="#ReturnLargeDeviceClick" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Return" textAlignment="RIGHT" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="VBoxWithoutMenuButtons" alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="215.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="WithoutECClassButton" alignment="CENTER" mnemonicParsing="false" onAction="#WithoutECClassButtonClick" prefHeight="80.0" prefWidth="210.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Without energy&#10;efficiency class" textAlignment="RIGHT" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="MenuLargeDevice" alignment="CENTER" mnemonicParsing="false" onAction="#MenuLargeDeviceClick" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Menu" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Times New Roman Bold" size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

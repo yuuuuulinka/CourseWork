@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ViewSortStage" prefHeight="605.0" prefWidth="603.0" styleClass="bodybg" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.homedeviceskursova.ViewSortDevicePageController">
+   <children>
+      <VBox fx:id="VBoxAllViewSortPage" alignment="TOP_CENTER" prefHeight="605.0" prefWidth="603.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="TextViewSortDevices" strokeType="OUTSIDE" strokeWidth="0.0" text="View/sort&#10;devices" textAlignment="CENTER" wrappingWidth="374.6474609375">
+               <font>
+                  <Font name="Algerian" size="65.0" />
+               </font>
+            </Text>
+            <VBox fx:id="VBoxAllButtonsViewSortPage" alignment="CENTER" prefHeight="374.0" prefWidth="603.0" spacing="20.0">
+               <children>
+                  <Button fx:id="ViewAllDevices" alignment="CENTER" mnemonicParsing="false" onAction="#ViewAllDevicesClick" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="View all devices" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ViewSmallDevices" alignment="CENTER" mnemonicParsing="false" onAction="#ViewSmallDevicesClick" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="View small devices" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ViewLargeDevices" alignment="CENTER" mnemonicParsing="false" onAction="#ViewLargeDevicesClick" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="View all large devices" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ViewLDDWithEEClass" alignment="CENTER" mnemonicParsing="false" onAction="#ViewLDDWithEEClassClick" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="View large devices&#10;with EE class" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="MenuViewSortPage" alignment="CENTER" mnemonicParsing="false" onAction="#MenuViewSortPageClick" style="-fx-background-color: #9999cc; -fx-border-color: #cc99ff; -fx-border-width: 2px;" text="Menu" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
